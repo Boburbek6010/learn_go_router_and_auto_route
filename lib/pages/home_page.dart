@@ -7,7 +7,9 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        backgroundColor: Colors.blueGrey,
+      ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -16,7 +18,7 @@ class HomePage extends StatelessWidget {
               fontSize: 30,
             ),),
             ElevatedButton(
-              onPressed: ()async{
+              onPressed: (){
                 context.go("/detail_page");
               },
               child: const Text("Go next"),
